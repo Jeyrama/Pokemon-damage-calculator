@@ -51,3 +51,5 @@ function calculateDamage(yourType, opponentType, attack, defense){
   
   return Math.ceil(50 * (attack/defense) * effectivenessMap[yourType][opponentType]);
 }
+
+// or
