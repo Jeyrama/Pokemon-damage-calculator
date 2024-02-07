@@ -53,3 +53,14 @@ function calculateDamage(yourType, opponentType, attack, defense){
 }
 
 // or
+
+function calculateDamage(yourType, opponentType, attack, defense) {
+  let strength = { fire: 'grass', water: 'fire', grass: 'water', electric: 'water' };
+  let effectiveness = 1;
+  if (yourType == opponentType || yourType == strength[opponentType]) {
+    effectiveness = 0.5;
+  } else if (opponentType == strength[yourType]) {
+    effectiveness = 2;
+  }
+  return Math.ceil(50 * effectiveness * attack / defense);
+}
