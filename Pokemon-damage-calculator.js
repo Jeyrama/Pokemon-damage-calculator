@@ -38,3 +38,5 @@ For this challenge, any type against itself is not very effective.
 Also, assume that the relationships between different types are symmetric 
 (if A is super effective against B, then B is not very effective against A).
 */
+
+// Solution
